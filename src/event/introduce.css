@@ -1,0 +1,125 @@
+.event_all_box {
+  background-color: var(--body_background_color);
+  display: flex;
+  justify-content: center;
+}
+
+.event_introduce {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11rem;
+}
+
+.event_introduce_box {
+  text-align: center;
+  height: 1000px;
+  margin-top: 5rem;
+  background-color: var(--body_background_color);
+}
+.event_introduce_box > h2 {
+  font-size: x-large;
+  position: relative;
+  z-index: -2;
+  color: var(--body_color);
+}
+
+.event_introduce_box_title {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--body_color);
+}
+
+.event_introduce .event_container_123 {
+  align-items: center;
+  display: flex;
+  width: 45%;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  height: 150px;
+  margin-bottom: 20px;
+  color: black;
+  z-index: 2;
+  position: absolute;
+  margin-top: 5rem;
+}
+
+.event_introduce .event_container_123 > div > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.event_introduce .event_container_123 > div > p {
+  text-align: center;
+  height: 150px;
+}
+
+.event_introduce img {
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  width: 100px;
+  height: 100px;
+}
+
+.event_introduce_des {
+  border-radius: 10px;
+  width: 70%;
+  height: 100px;
+  border: gray 1px solid;
+  padding: 1rem;
+  text-align: initial;
+}
+
+.event_page-check {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_page-check_pass {
+  margin: 1rem;
+  width: 80%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: medium;
+  margin-right: 0.5rem;
+  border: 1px solid #36bf36;
+  color: #36bf36;
+}
+
+.event_page-check_refuse {
+  margin: 1rem;
+  width: 80%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: medium;
+  margin-right: 0.5rem;
+  border: 1px solid #ff4d00;
+  color: #ff4d00;
+}
+
+.event_page-check_pass:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #36bf36;
+}
+.event_page-check_refuse:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ff4d00;
+}
+
+
+
+@media screen and (max-width: 840px) {
+  .event_introduce .event_container_123{
+    width: 90%;
+  }
+}

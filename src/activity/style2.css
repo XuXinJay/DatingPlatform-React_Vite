@@ -1,0 +1,240 @@
+/* 英文
+@font-face {
+    font-family: custom-sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Poppins&display=swap');
+    unicode-range: U+00-024F;
+}
+
+中文
+@font-face {
+    font-family: custom-sans-serif;
+    src: url(./fonts/ChiuKongGothic.ttf);
+    unicode-range: U+4E00-9FFF;
+}
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* 主設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 導覽列的設定 */
+
+.navTitle {
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navItem {
+  width: 100px;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+.memberButton {
+  position: absolute;
+  right: 0;
+  border: 3px solid #f7c242;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 20px;
+}
+
+.memberButton > i {
+  margin: 0 0 0 5px;
+}
+
+.activity_container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  top: 100px;
+}
+
+.progressBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+}
+
+.progress_2 {
+  font-weight: bold;
+  width: 100%;
+}
+
+.progress12 {
+  width: 33.3%;
+  background-color: lightgray;
+  line-height: 50px;
+  font-weight: bold;
+}
+.progress22 {
+  width: 33.3%;
+  font-weight: bold;
+  line-height: 50px;
+  background-color: #f7c242;
+}
+.progress32 {
+  font-weight: bold;
+  width: 33.4%;
+  line-height: 50px;
+  background-color: lightgray;
+}
+
+.activity_main_2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 7rem;
+  width: 100%;
+}
+
+.activity_title {
+  font-size: 24px;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.allActivity {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hostName {
+  font-size:1.2rem;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hostName > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  margin-right: 20px;
+}
+
+.uploadImage11 {
+  text-align: center;
+  overflow: hidden;
+}
+
+.uploadImage11> img {
+  border-radius: 20px;
+  margin: 10px auto;
+  width: 570px;
+}
+
+.activityText_2 {
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+
+.activityText_2 > textarea {
+  display: block;
+  margin: 30px auto;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 10px;
+  width: 80%;
+  height: 35vh;
+  resize: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+.meetForm {
+  margin-top: 25px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.meetBox {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.box > input {
+  font-size: 18px;
+}
+
+.selectType {
+  margin-left: 10px;
+  border: 2px solid #f7c242;
+  width: 60%;
+  font-size: 1rem;
+  /* background-color: #f7c242; */
+}
+
+.formType {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid #f7c242;
+  border-bottom: 1px solid var(--body_color);
+  color: var(--body_color);
+  padding-left: 5px;
+  margin: 10px;
+}
+
+.box:first-child > input {
+  width: 300px;
+}
+
+.buttonControl {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #f7c242;
+}
